@@ -11,8 +11,6 @@ function ChatInput({ channelName, channelId }) {
   const [input, setInput] = useState("");
   const sendMessage = (e) => {
     e.preventDefault();
-
-    console.log("hi");
     if(channelId){
       db.collection('rooms').doc(channelId).collection('messages').add(
         {
@@ -23,6 +21,7 @@ function ChatInput({ channelName, channelId }) {
         }
       )
     }
+    setInput("");
   };
   return (
     <div className="chatInput">
