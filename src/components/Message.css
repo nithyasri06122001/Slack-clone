@@ -1,7 +1,7 @@
 .message {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   padding-left: 10px;
   position: relative;
   top: 20px;
