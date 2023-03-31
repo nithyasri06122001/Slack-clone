@@ -38,3 +38,11 @@ code {
   position: fixed;
   display: block;
 }
+
+.addChannel_form {
+  padding: 10px;
+  align-items: center;
+}
+.button {
+  background-color: aquamarine;
+}
