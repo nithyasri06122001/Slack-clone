@@ -13,13 +13,14 @@ function SidebarOption({ Icon, title, addChannelOption, id }) {
     }
   };
   const addChannel = () => {
-    const channelName = prompt("Please enter the channel name");
+    // const channelName = prompt("Please enter the channel name");
 
-    if (channelName) {
-      db.collection("rooms").add({
-        name: channelName,
-      });
-    }
+    // if (channelName) {
+    //   db.collection("rooms").add({
+    //     name: channelName,
+    //   });
+    // }
+    navigate("/backdrop");
   };
   return (
     <div

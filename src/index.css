@@ -24,3 +24,17 @@ code {
   border: 1px solid gray;
   border-radius: 6px;
 }
+.backdrop {
+  z-index: 20;
+  display: none;
+}
+.backdrop__form {
+  height: 30%;
+  width: 30%;
+  background-color: white;
+  z-index: 30;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  display: block;
+}
