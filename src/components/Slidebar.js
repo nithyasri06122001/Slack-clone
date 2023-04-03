@@ -125,17 +125,13 @@ function Slidebar(props) {
               alt={user?.displayName}
               src={user?.photoURL}
             />
-            <AccessTimeIcon />
           </div>
           <div className="header__search">
             {/* Search icon,input */}
             <SearchIcon />
             <input placeholder="Search Your Channels" />
           </div>
-          <div className="header__right">
-            <HelpOutlineOutlinedIcon />
-            {/* help icon */}
-          </div>
+          <div className="header__right">{/* help icon */}</div>
         </div>
       </AppBar>
       <Box

@@ -20,14 +20,21 @@
 .header__left > .MuiSvgIcon-root {
   margin-left: auto;
 }
-
+.header__search {
+  position: relative;
+}
 .header__search > input {
+  position: absolute;
+  color: white;
   background-color: transparent;
   border: none;
   text-align: center;
-  min-width: 35vw;
+  min-width: 32.4vw;
+  height: 30px;
 }
-
+.header__search > .MuiSvgIcon-root {
+  font-size: 30px;
+}
 .header__right {
   flex: 0.3;
   display: flex;
