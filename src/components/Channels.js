@@ -23,7 +23,7 @@ export default function Channels({ channels }) {
   return (
     <List>
       <ListItemButton onClick={handleClick}>
-        <ListItemText primary="Channel" />
+        <ListItemText primary="Channels" />
         {open ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
       <Collapse in={open} timeout="auto" unmountOnExit>
