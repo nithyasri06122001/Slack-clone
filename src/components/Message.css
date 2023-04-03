@@ -9,6 +9,7 @@
   height: 30px;
   width: 30px;
   object-fit: contain;
+  border-radius: 4px;
 }
 .message__info {
   padding-left: 10px;

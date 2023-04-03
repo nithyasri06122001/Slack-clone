@@ -67,35 +67,6 @@ function Slidebar(props) {
   };
 
   const drawer = (
-    // // <div>
-    //   {/* <Toolbar />
-    //   <Divider />
-    //   <List>
-    //     {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-    //       <ListItem key={text} disablePadding>
-    //         <ListItemButton>
-    //           <ListItemIcon>
-    //             {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-    //           </ListItemIcon>
-    //           <ListItemText primary={text} />
-    //         </ListItemButton>
-    //       </ListItem>
-    //     ))}
-    //   </List>
-    //   <Divider />
-    //   <List>
-    //     {['All mail', 'Trash', 'Spam'].map((text, index) => (
-    //       <ListItem key={text} disablePadding>
-    //         <ListItemButton>
-    //           <ListItemIcon>
-    //             {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-    //           </ListItemIcon>
-    //           <ListItemText primary={text} />
-    //         </ListItemButton>
-    //       </ListItem>
-    //     ))}
-    //   </List>
-    // </div> */}
     <div className="sidebar">
       <div className="sidebar__header">
         <div className="sidebar__info">
@@ -204,14 +175,6 @@ function Slidebar(props) {
           {drawer}
         </Drawer>
       </Box>
-      <Box
-        component="main"
-        sx={{
-          flexGrow: 1,
-          p: 3,
-          width: { sm: `calc(100% - ${drawerWidth}px)` },
-        }}
-      ></Box>
     </Box>
   );
 }
