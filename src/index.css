@@ -43,6 +43,41 @@ code {
   padding: 10px;
   align-items: center;
 }
-.button {
-  background-color: aquamarine;
+.submitButton {
+  margin-top: 20px;
+  width: 110px;
+  margin-right: 20px;
+  background-color: #611f69;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  color: #fff;
+  border: none;
+  /* font-weight: bold; */
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+}
+.cancelButton {
+  cursor: pointer;
+  width: 110px;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  color: #611f69;
+  border: 1px solid #611f69;
+  /* font-weight: bold; */
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.addInput {
+  padding: 11px 12px 13px;
+  height: 24px;
+  font-size: 18px;
+  line-height: 1.33333333;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px solid black;
 }
