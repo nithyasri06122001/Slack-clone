@@ -13,6 +13,7 @@
   top: 0;
   z-index: 2;
   background-color: white;
+  margin-top: 60px;
 }
 
 .chat__channelName {

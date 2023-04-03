@@ -1,25 +1,24 @@
-.sidebarOption{
-    display:flex;
-    align-items:center;
-    font-size:12px;
-    padding-left:2px;
-    cursor:pointer;
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding-left: 2px;
+  cursor: pointer;
 }
-.sidebarOption:hover{
-    background-color: #340e36;
-    opacity:0.9;
+.sidebarOption:hover {
+  background-color: #340e36;
+  opacity: 0.9;
 }
-.sidebarOption__icon{
-    padding:10px;
-    font-size:15px !important;
+.sidebarOption__icon {
+  font-size: 25px;
 }
-.sidebarOption__channel{
-    padding:10px 0;
-
+.sidebarOption__channel {
+  padding: 10px 0;
 }
-.sidebarOption__hash{
-    padding:10px;
+.sidebarOption__hash {
+  padding: 10px;
 }
 .sidebarOption > h3 {
-    font-weight: 400;
+  font-weight: 400;
+  margin: 8px;
 }
