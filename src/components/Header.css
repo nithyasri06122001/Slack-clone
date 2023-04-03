@@ -7,6 +7,9 @@
   color: white;
   min-width: 200px;
 }
+.header__search {
+  position: relative;
+}
 
 .mui__menu__icon {
   padding-left: 20px;
