@@ -22,7 +22,6 @@ const style = {
 export default function BasicModal() {
   const [open, setOpen] = React.useState(true);
   const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
   const [channel, setChannel] = React.useState("");
   const navigate = useNavigate();
 
@@ -34,6 +33,10 @@ export default function BasicModal() {
       });
       navigate("/");
     }
+  };
+  const handleClose = () => {
+    setOpen(false);
+    navigate("/");
   };
   const addChannel = (e) => {
     setChannel(e.target.value);
@@ -60,12 +63,21 @@ export default function BasicModal() {
               placeholder="Enter channel name"
               onChange={addChannel}
               value={channel}
+              className="addInput"
             />
             <div>
-              <button className="button" onClick={submitHandle} type="submit">
+              <button
+                className="submitButton"
+                onClick={submitHandle}
+                type="submit"
+              >
                 submit
               </button>
-              <button className="button" onClick={cancelHandle} type="submit">
+              <button
+                className="cancelButton"
+                onClick={cancelHandle}
+                type="submit"
+              >
                 cancel
               </button>
             </div>
