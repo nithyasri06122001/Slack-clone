@@ -65,16 +65,16 @@ export default function BasicModal() {
               value={channel}
               className="addInput"
             />
-            <div>
+            <div className="buttonDiv">
               <button
-                className="submitButton"
+                className="actionBtn submitButton"
                 onClick={submitHandle}
                 type="submit"
               >
                 submit
               </button>
               <button
-                className="cancelButton"
+                className="actionBtn cancelButton"
                 onClick={cancelHandle}
                 type="submit"
               >
