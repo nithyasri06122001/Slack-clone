@@ -43,13 +43,14 @@ code {
 }
 
 .addChannel_form {
-  padding: 10px;
+  border: none;
+  padding: 20px;
   align-items: center;
 }
 
 .addInput {
   padding: 11px 12px 13px;
-  height: 24px;
+  width: 100%;
   font-size: 18px;
   line-height: 1.33333333;
   margin-top: 10px;
@@ -62,8 +63,11 @@ code {
 }
 
 .actionBtn {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
   cursor: pointer;
-  width: 110px;
+  width: 100%;
   margin-top: 20px;
   margin-right: 20px;
   border-radius: 4px;
@@ -82,4 +86,6 @@ code {
   background-color: #fff;
   color: #611f69;
   border: 1px solid #611f69;
+  margin-left: auto;
+  margin-right: 0%;
 }

@@ -1,12 +1,4 @@
 .sidebar {
-  flex: 0.3;
-  background-color: var(--slack-color);
-  border-top: 1px solid #49274b;
-  max-width: 260px;
-  color: white;
-  overflow: scroll;
-.sidebar {
-  flex: 0.3;
   background-color: var(--slack-color);
   border-top: 1px solid #49274b;
   max-width: 260px;
