@@ -11,6 +11,7 @@
 }
 .sidebarOption__icon {
   font-size: 25px;
+  margin-left: 5px;
 }
 .sidebarOption__channel {
   margin: 8px;
