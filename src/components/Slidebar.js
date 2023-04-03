@@ -141,10 +141,12 @@ function Slidebar(props) {
         }}
       >
         <div className="header">
-          <MenuIcon
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
-          />
+          <div className="mui__menu__icon">
+            <MenuIcon
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { sm: "none" } }}
+            />
+          </div>
           <div className="header__left">
             {/* Avatar,time icon */}
             <Avatar
@@ -202,6 +204,14 @@ function Slidebar(props) {
           {drawer}
         </Drawer>
       </Box>
+      <Box
+        component="main"
+        sx={{
+          flexGrow: 1,
+          p: 3,
+          width: { sm: `calc(100% - ${drawerWidth}px)` },
+        }}
+      ></Box>
     </Box>
   );
 }
