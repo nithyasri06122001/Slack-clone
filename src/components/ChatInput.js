@@ -11,7 +11,7 @@ function ChatInput({ channelName, channelId }) {
   const [input, setInput] = useState("");
   const sendMessage = (e) => {
     e.preventDefault();
-    if (channelId && e.target.value) {
+    if (channelId && input.length > 0) {
       db.collection("rooms").doc(channelId).collection("messages").add({
         message: input,
         timestamp: firebase.firestore.FieldValue.serverTimestamp(),
@@ -19,6 +19,7 @@ function ChatInput({ channelName, channelId }) {
         userName: user.displayName,
       });
     }
+    console.log(input);
     setInput("");
   };
   return (
