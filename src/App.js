@@ -7,7 +7,8 @@ import Chat from "./components/Chat";
 import Login from "./components/Login";
 import { useStateValue } from "./StateProvider";
 import Thread from "./components/Menu/Thread";
-import SimpleBackdrop from "./components/Backdrop";
+import BasicModal from "./components/Backdrop";
+import Slidebar from "./components/Slidebar";
 
 function App(props) {
   const [{ user }, dispatch] = useStateValue();
@@ -19,15 +20,14 @@ function App(props) {
           <Login />
         ) : (
           <>
-            <Header />
             <div className="app__body">
-              <Sidebar />
+              <Slidebar />
               <Routes>
                 <Route path="/Threads" element={<Thread />} />
                 <Route path="/room/:roomId" element={<Chat />} />
                 {/* <Chat /> */}
                 <Route path="/" element={<h1>Welcome</h1>} />
-                <Route path="/backdrop" element={<SimpleBackdrop />} />
+                <Route path="/backdrop" element={<BasicModal />} />
 
                 {/* <h1>Welcome to slack</h1> */}
               </Routes>
