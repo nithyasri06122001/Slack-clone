@@ -27,7 +27,7 @@ function App(props) {
                 <Route path="/room/:roomId" element={<Chat />} />
                 {/* <Chat /> */}
                 <Route path="/" element={<h1>Welcome</h1>} />
-                <Route path="/backdrop" element={<BasicModal />} />
+                <Route path="/addChannel" element={<BasicModal />} />
 
                 {/* <h1>Welcome to slack</h1> */}
               </Routes>

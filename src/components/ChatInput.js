@@ -19,6 +19,7 @@ function ChatInput({ channelName, channelId }) {
         userName: user.displayName,
       });
     }
+    console.log(input);
     setInput("");
   };
   return (
