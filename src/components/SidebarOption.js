@@ -20,7 +20,7 @@ function SidebarOption({ Icon, title, addChannelOption, id }) {
     //     name: channelName,
     //   });
     // }
-    navigate("/backdrop");
+    navigate("/addChannel");
   };
   return (
     <div
